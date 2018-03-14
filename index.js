@@ -19,19 +19,15 @@ bot.on('message', function (message){
     if(message.content === 's!help'){
         var ap = String("'");
         message.author.sendMessage('Aide du bot discord: ')
+        message.author.sendMessage('s!help Pour affiché les aides concernant le bot')
+        message.author.sendMessage('s!kick Pour kick un joueur du serveur (En développement)')
         message.author.sendMessage('Bot développé par ScorpionVEVO')
         message.channel.sendMessage('Aide envoyée en mp !')
     }
-})
-
-bot.on('message', function (message){
-    if(message.content === 's!boss'){
-        message.channel.sendMessage('Mon dieu est @ScorpionVEVO#1505')
+    if(message.content === 's!discord'){
+        message.channel.sendMessage('Voici le discord du serveur: https://discord.gg/jmN6ZYH')
     }
-})
-
-bot.on('message', function (message){
-    if(message.content === 's!dieu'){
-        message.channel.sendMessage('lewarrior est moche :p')
+    if(message.content === 's!mumble'){
+        message.channel.sendMessage('Mumble')
     }
 })
