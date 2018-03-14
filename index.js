@@ -29,3 +29,9 @@ bot.on('message', function (message){
         message.channel.sendMessage('Mon dieu est @ScorpionVEVO#1505')
     }
 })
+
+bot.on('message', function (message){
+    if(message.content === 's!dieu'){
+        message.channel.sendMessage('lewarrior est moche :p')
+    }
+})
