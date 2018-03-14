@@ -20,6 +20,6 @@ bot.on('message', function (message){
         var ap = String("'");
         message.author.sendMessage('Aide du bot discord: ')
         message.author.sendMessage('Bot développé par ScorpionVEVO')
-        message.channel.sendMessage('L' + ap + 'aide du serveur t' + ap + 'as été encoyé en mp !')
+        message.channel.sendMessage('Aide envoyée en mp !')
     }
 })
