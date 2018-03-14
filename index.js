@@ -24,10 +24,9 @@ bot.on('message', function (message){
         message.author.sendMessage('Bot développé par ScorpionVEVO')
         message.channel.sendMessage('Aide envoyée en mp !')
     }
-    if(message.content === 's!discord'){
-        message.channel.sendMessage('Voici le discord du serveur: https://discord.gg/jmN6ZYH')
-    }
-    if(message.content === 's!mumble'){
-        message.channel.sendMessage('Mumble')
+    if(message.content === 's!annonce'){
+        if(message.equals.content === 'bs'){
+            message.author.sendMessage('Bonjour');
+        }
     }
 })
