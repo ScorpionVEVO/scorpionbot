@@ -16,6 +16,7 @@ bot.on('message', function (message){
 })
 
 bot.on('message', function (message){
+    const command = args.shift().toLowerCase();
     if(message.content === 's!help'){
         var ap = String("'");
         message.author.sendMessage('Aide du bot discord: ')
@@ -24,7 +25,7 @@ bot.on('message', function (message){
         message.author.sendMessage('Bot développé par ScorpionVEVO')
         message.channel.sendMessage('Aide envoyée en mp !')
     }
-    if(message.content === '!ban'){
+    if(command === '!ban'){
         if(!msg.member.permissions.has('ADMINISTRATOR')) return message.reply('Tu n\'est pas un admin');
         const member = message.mentions.first();
         if(!member) return message.reply('Utilisation incorecte, utilise !ban @Utilisateur#1234');
