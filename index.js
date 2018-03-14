@@ -19,5 +19,6 @@ bot.on('message', function (message){
     if(message.content === '!help'){
         message.author.sendMessage('Aide du bot discord: ')
         message.author.sendMessage('Bot développé par ScorpionVEVO')
+        message.channel.sendMessage("L'aide du serveur t'as été encoyé en mp !")
     }
 })
