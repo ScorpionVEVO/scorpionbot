@@ -24,9 +24,10 @@ bot.on('message', function (message){
         message.author.sendMessage('Bot développé par ScorpionVEVO')
         message.channel.sendMessage('Aide envoyée en mp !')
     }
-    if(message.content === 's!annonce'){
-        if(message.equals.content === 'bs'){
-            message.author.sendMessage('Bonjour');
+    if(message.content === '!ban'){
+        if(!msg.member.permissions.has('ADMINISTRATOR')) return message.reply('Tu n\'est pas un admin');
+        const member = message.mentions.first();
+        if(!member) return message.reply('Utilisation incorecte, utilise !ban @Utilisateur#1234');
+        member.ban();
         }
-    }
-})
+    })
